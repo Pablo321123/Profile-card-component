@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --light-gray: #e7e7e7;
+    --white: #fff
+}
+
+* {
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 1rem;
+    background-color: var(--dark-cyan);
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 49vw bottom 50vh, left 50vw top 50vh;
+
+}
+
+.card-perfil-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+header img {
+    border-radius: 10px 10px 0 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: -35%;
+    /*Raise all below this element*/
+    /*transform: translateY(-50%); Raise only this element and stay in 'default' position all elements bellow of this*/
+    width: 100%;
+    padding: 2rem;
+    border-bottom: solid 1px var(--light-gray);
+}
+
+.content img {
+    border-radius: 50%;
+    border: solid 6px var(--white);
+}
+
+.content p {
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--dark-gray);
+    gap: 10px;
+}
+
+.content span {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.statistic-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.statistic-container .statistic-numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.statistic-container .statistic-numbers span {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.statistic-container .statistic-numbers p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--dark-gray);
+    letter-spacing: 2px;
+}
+
+footer .attribution {
+    color: var(--white);
+    font-size: 14px;
+}
