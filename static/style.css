@@ -19,7 +19,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    gap: 1rem;
+    gap: 10px;
     background-color: var(--dark-cyan);
     background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
     background-repeat: no-repeat, no-repeat;
@@ -32,7 +32,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     border-radius: 10px;
     background-color: var(--white);
     box-shadow:
@@ -69,10 +69,17 @@ header img {
 
 .content p {
     display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--dark-gray);
     gap: 10px;
+}
+
+.content .p-city {
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .content span {
@@ -84,9 +91,9 @@ header img {
 .statistic-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
-    padding: 0 2rem 2rem 2rem;
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
 }
 
 .statistic-container .statistic-numbers {
